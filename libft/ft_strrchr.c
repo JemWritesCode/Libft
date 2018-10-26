@@ -14,14 +14,13 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int len = ft_strlen(s);
+	int len;
+
+	len = ft_strlen(s);
 	while (len > 0 && s[len] != c){
 		len--;
-		s--;
 	}
-	if (*s != c)
+	if (s[len] != c)
 		return (NULL);
-	return ((char*)s);
+	return ((char*)(s += len));
 }
-
-//TODO6
