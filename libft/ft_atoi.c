@@ -22,7 +22,7 @@ int		ft_atoi(char *str)
 	while (*str == '\n' || *str == ' ' || *str == '\t' || *str == '\r' ||
 			*str == '\f' || *str == '\v' || *str == '+')
 		str++;
-	else if (*str == '-')
+	if (*str == '-')
 	{
 		str++;
 		sign = -1;

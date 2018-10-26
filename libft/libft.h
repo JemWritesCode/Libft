@@ -15,6 +15,13 @@
 
 # include <stdlib.h>
 # include <string.h> //NULL and size_t
+#include <unistd.h> //write function for putchar
+
+typedef struct		s_list
+{
+	char			data;
+	struct s_list	*next;
+}					t_list;
 
 size_t	ft_strlen(const char *s);
 char	*ft_strcpy(char *dst, const char *src);
