@@ -127,7 +127,7 @@ ft_lstdel.o \
 ft_lstadd.o \
 ft_lstiter.o \
 ft_lstmap.o
-HDR = libft.h
+HDR = ./libft.h
 FLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
@@ -144,3 +144,8 @@ fclean: clean
 	/bin/rm -f $(NAME)
 
 re: fclean all 
+
+maintest:
+	gcc $(SRCS) ../LibftWorkFiles/main.c  -I $(HDR) $(FLAGS) -o MainTest
+	ar -rc $(NAME) $(OBJS)
+	ranlib $(NAME)
