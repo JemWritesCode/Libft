@@ -34,7 +34,7 @@ ft_strncmp.c \
 ft_atoi.c \
 ft_isalpha.c \
 ft_isdigit.c \
-ft_salnum.c \
+ft_isalnum.c \
 ft_isascii.c \
 ft_isprint.c \
 ft_toupper.c \
@@ -92,7 +92,7 @@ ft_strncmp.o \
 ft_atoi.o \
 ft_isalpha.o \
 ft_isdigit.o \
-ft_salnum.o \
+ft_isalnum.o \
 ft_isascii.o \
 ft_isprint.o \
 ft_toupper.o \
