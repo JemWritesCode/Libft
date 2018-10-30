@@ -21,7 +21,7 @@ ft_strncmp
 ft_atoi
 ft_isalpha
 ft_isdigit
-ft_salnum
+ft_isalnum
 ft_isascii
 ft_isprint
 ft_toupper
