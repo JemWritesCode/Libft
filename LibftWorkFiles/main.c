@@ -34,7 +34,19 @@ printf("\n\n=====Testing 2 - ft_bzero=====");
 	printf("\n		LIBC: %s", ft_bzero_str3);
 	printf("\n 		MINE: %s", ft_bzero_str4);
 
-// 3 ft_memcpy
+printf("\n\n=====Testing 3 - ft_memcpy=====");
+//CURRENTLY WORKING ON THIS ONE
+	char ft_memcpy_str1src[] = "Supercalifragilisticexpialidocious";
+	char ft_memcpy_str2dest[] = "SomeOtherReallyLongNonsense";
+	char ft_memcpy_str3src[] = "Supercalifragilisticexpialidocious";
+	char ft_memcpy_str4dest[] = "SomeOtherReallyLongNonsense";
+	memcpy(ft_memcpy_str2dest, ft_memcpy_str1src, 5);
+	ft_memcpy(ft_memcpy_str3dest, ft_memcpy_str4src, 5);
+	printf("\n		LIBC SOURCE: %s", ft_memcpy_str1src);
+	printf("\n 		MINE SOURCE: %s", ft_memcpy_str3src);
+	printf("\n		LIBC DEST: %s", ft_memcpy_str2dest);
+	printf("\n 		MINE DEST: %s", ft_memcpy_str3dest);
+
 // 4 ft_memccpy
 // 5 ft_memmove
 // 6 ft_memchr
