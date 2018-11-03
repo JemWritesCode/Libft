@@ -6,10 +6,11 @@
 
 #include "../libft/libft.h" //My libft header file.
 #include <stdio.h> //Printf for testing.
-#include <string.h>//libc memset for test.
-#include <strings.h>//libc bzero for test.
-#include <ctype.h>//libc: isdigit
-int main(void){
+#include <string.h>
+#include <strings.h>
+#include <ctype.h>
+int main(void)
+{
 setbuf(stdout, NULL); // set all writes to stdout to be unbuffered. This helps keep the printfs in correct order.
 
 printf("\n%s ======================Part 1 Function TESTS====================== %s", KCYN, KGRN);
@@ -81,16 +82,30 @@ printf("\n\n=====Testing 5 - ft_memmove=====");
 	printf("\n 		MINE: %s", ft_memmove(ft_memmove_dst2, "Stumpy is cool!", 6));
 
 printf("\n\n=====Testing 6 - ft_memchr=====");
-	//CURRENTLY WORKING ON
-//	char strchr_str1[] = "Yellow Butterfly";
-//	printf("\n 		LIBC: %s", memchr(strchr_str1,'l'));
-//	printf("\n 		MINE: %s", ft_memchr(strchr_str1,'l'));
-//
-//	char strchr_str2[] = "Snap Crackle Pop"; 
-//	printf("\n 		LIBC: %s", memchr(strchr_str2,'p'));
-//	printf("\n 		MINE: %s", ft_memchr(strchr_str2,'p'));
+	char ft_memchr_str1[] = "Yellow Butterfly";
+	printf("\n 		LIBC: %s", memchr(ft_memchr_str1,'l', 5));
+	printf("\n 		MINE: %s", ft_memchr(ft_memchr_str1,'l', 5));
 
-// 7 ft_memcmp
+	char ft_memchr_str2[] = "Snap Crackle Pop"; 
+	printf("\n 		LIBC: %s", memchr(ft_memchr_str2,'p', 2));
+	printf("\n 		MINE: %s", ft_memchr(ft_memchr_str2,'p', 2));
+
+ printf("\n\n=====Testing 7 - ft_memcmp=====");
+	char ft_memcmp_str1[] = "Hello";
+	char ft_memcmp_str2[] = "Tests";
+	printf("\n 		LIBC: %d", memcmp(ft_memcmp_str1, ft_memcmp_str2, 5));
+	printf("\n 		MINE: %d", ft_memcmp(ft_memcmp_str1, ft_memcmp_str2, 5));
+
+	char ft_memcmp_str3[] = "Snails";
+	char ft_memcmp_str4[] = "Snailz";
+	printf("\n 		LIBC: %d", memcmp(ft_memcmp_str3, ft_memcmp_str4, 6));
+	printf("\n 		MINE: %d", ft_memcmp(ft_memcmp_str3, ft_memcmp_str4, 6));
+
+	char ft_memcmp_str5[] = "Hellos";
+	char ft_memcmp_str6[] = "Hellos";
+	printf("\n 		LIBC: %d", memcmp(ft_memcmp_str5, ft_memcmp_str6, 6));
+	printf("\n 		MINE: %d", ft_memcmp(ft_memcmp_str5, ft_memcmp_str6, 6));
+
 
 printf("\n\n=====Testing 8 - ft_strlen=====");
 	printf("\n		LIBC: %zu", strlen("HelloWorld"));
@@ -111,8 +126,29 @@ printf("\n\n=====Testing 11 - ft_strncpy=====");
 	printf("\n		LIBC: %s", strncpy(ft_strncpy_dst1, "Stumpy is cool!", 6));
 	printf("\n 		MINE: %s", ft_strncpy(ft_strncpy_dst2, "Stumpy is cool!", 6));
 
-// 12 ft_strcat
-// 13 ft_strncat
+printf("\n\n=====Testing 12 - ft_strcat=====");
+	// Libc's strcat doesn't handle memory allocation, so you have to handle that ahead of time.
+   	char ft_strcat_str1[50], ft_strcat_str2[50];
+   	strcpy(ft_strcat_str1,  "This is source");
+   	strcpy(ft_strcat_str2, "This is destination");
+	printf("\n		LIBC: %s", strcat(ft_strcat_str1, ft_strcat_str2));
+   	char ft_strcat_str3[50], ft_strcat_str4[50];
+   	strcpy(ft_strcat_str3,  "This is source");
+   	strcpy(ft_strcat_str4, "This is destination");
+	printf("\n		MINE: %s", ft_strcat(ft_strcat_str3, ft_strcat_str4));
+
+printf("\n\n=====Testing 13 - ft_strncat=====");
+	//CURRENTLY WORKING ON
+   	char ft_strncat_str1[50], ft_strncat_str2[50];
+   	strcpy(ft_strncat_str1,  "This is source");
+   	strcpy(ft_strncat_str2, "This is destination");
+	printf("\n		LIBC: %s", strncat(ft_strncat_str1, ft_strncat_str2, 4));
+	char ft_strncat_str3[50], ft_strncat_str4[50];
+   	strcpy(ft_strncat_str3,  "This is source");
+   	strcpy(ft_strncat_str4, "This is destination");
+	printf("\n		LIBC: %s", ft_strncat(ft_strncat_str3, ft_strncat_str4, 4));
+
+
 // 14 ft_strlcat
 
 printf("\n\n=====Testing 15 - ft_strchr=====");
@@ -262,5 +298,5 @@ printf("\n%s ======================Part 3 Function TESTS====================== %
 // 57 ft_lstiter
 // 58 ft_lstmap
 
-	return(0);
+	return (0);
 }
