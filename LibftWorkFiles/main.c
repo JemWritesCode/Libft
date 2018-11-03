@@ -27,6 +27,7 @@ printf("\n\n=====Testing 2 - ft_bzero=====");
 	printf("\n		LIBC: %s", ft_bzero_str1);
 	printf("\n 		MINE: %s", ft_bzero_str2);
 	
+	//If n is zero, bzero() does nothing. (String is unaltered)
 	char ft_bzero_str3[] = "My names Jeff";
 	char ft_bzero_str4[] = "My names Jeff";
 	bzero(ft_bzero_str3, 0);
@@ -73,9 +74,22 @@ printf("\n\n=====Testing 4 - ft_memccpy=====");
 	//Regular memccpy will just throw an error if you try to pass it n that is too large.
 	//memccpy(ft_memccpy_str2dest, ft_memccpy_str1src, 'p', 55);
 
+printf("\n\n=====Testing 5 - ft_memmove=====");
+	char ft_memmove_dst1[16];
+	char ft_memmove_dst2[16];
+	printf("\n		LIBC: %s", memmove(ft_memmove_dst1, "Stumpy is cool!", 6));
+	printf("\n 		MINE: %s", ft_memmove(ft_memmove_dst2, "Stumpy is cool!", 6));
 
-// 5 ft_memmove
-// 6 ft_memchr
+printf("\n\n=====Testing 6 - ft_memchr=====");
+	//CURRENTLY WORKING ON
+//	char strchr_str1[] = "Yellow Butterfly";
+//	printf("\n 		LIBC: %s", memchr(strchr_str1,'l'));
+//	printf("\n 		MINE: %s", ft_memchr(strchr_str1,'l'));
+//
+//	char strchr_str2[] = "Snap Crackle Pop"; 
+//	printf("\n 		LIBC: %s", memchr(strchr_str2,'p'));
+//	printf("\n 		MINE: %s", ft_memchr(strchr_str2,'p'));
+
 // 7 ft_memcmp
 
 printf("\n\n=====Testing 8 - ft_strlen=====");
@@ -92,9 +106,10 @@ printf("\n\n=====Testing 10 - ft_strcpy=====");
 	printf("\n 		MINE: %s", ft_strcpy(ft_strcpy_dst, "Stumpy is cool!"));
 
 printf("\n\n=====Testing 11 - ft_strncpy=====");
-	char ft_strncpy_dst[16];
-	printf("\n		LIBC: %s", strncpy(ft_strncpy_dst, "Stumpy is cool!", 6));
-	printf("\n 		MINE: %s", ft_strncpy(ft_strncpy_dst, "Stumpy is cool!", 6));
+	char ft_strncpy_dst1[16];
+	char ft_strncpy_dst2[16];
+	printf("\n		LIBC: %s", strncpy(ft_strncpy_dst1, "Stumpy is cool!", 6));
+	printf("\n 		MINE: %s", ft_strncpy(ft_strncpy_dst2, "Stumpy is cool!", 6));
 
 // 12 ft_strcat
 // 13 ft_strncat
