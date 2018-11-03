@@ -35,19 +35,45 @@ printf("\n\n=====Testing 2 - ft_bzero=====");
 	printf("\n 		MINE: %s", ft_bzero_str4);
 
 printf("\n\n=====Testing 3 - ft_memcpy=====");
-//CURRENTLY WORKING ON THIS ONE
 	char ft_memcpy_str1src[] = "Supercalifragilisticexpialidocious";
 	char ft_memcpy_str2dest[] = "SomeOtherReallyLongNonsense";
+	memcpy(ft_memcpy_str2dest, ft_memcpy_str1src, 5);
 	char ft_memcpy_str3src[] = "Supercalifragilisticexpialidocious";
 	char ft_memcpy_str4dest[] = "SomeOtherReallyLongNonsense";
-	memcpy(ft_memcpy_str2dest, ft_memcpy_str1src, 5);
-	ft_memcpy(ft_memcpy_str3dest, ft_memcpy_str4src, 5);
+	ft_memcpy(ft_memcpy_str4dest, ft_memcpy_str3src, 5);
 	printf("\n		LIBC SOURCE: %s", ft_memcpy_str1src);
 	printf("\n 		MINE SOURCE: %s", ft_memcpy_str3src);
 	printf("\n		LIBC DEST: %s", ft_memcpy_str2dest);
-	printf("\n 		MINE DEST: %s", ft_memcpy_str3dest);
+	printf("\n 		MINE DEST: %s", ft_memcpy_str4dest);
 
-// 4 ft_memccpy
+	//Libc's memcpy will segfault if you pass it a null, so I think it's correct that mine does too.
+	//char *ft_memcpy_str5src = NULL;
+	//char ft_memcpy_str6dest[] = "SomeOtherReallyLongNonsense";
+	////char *ft_memcpy_str7src = NULL;
+	////char ft_memcpy_str8dest[] = "SomeOtherReallyLongNonsense";
+	//memcpy(ft_memcpy_str6dest, ft_memcpy_str5src, 5);
+	////ft_memcpy(ft_memcpy_str8dest, ft_memcpy_str7src, 5);
+	//printf("\n		LIBC SOURCE: %s", ft_memcpy_str5src);
+	////printf("\n 		MINE SOURCE: %s", ft_memcpy_str7src);
+	//printf("\n		LIBC DEST: %s", ft_memcpy_str6dest);
+	////printf("\n 		MINE DEST: %s", ft_memcpy_str8dest);	
+
+printf("\n\n=====Testing 4 - ft_memccpy=====");
+	char ft_memccpy_str1src[] = "Supercalifragilisticexpialidocious";
+	char ft_memccpy_str2dest[] = "SomeOtherReallyLongNonsense";
+	memccpy(ft_memccpy_str2dest, ft_memccpy_str1src, 'p', 5);
+	char ft_memccpy_str3src[] = "Supercalifragilisticexpialidocious";
+	char ft_memccpy_str4dest[] = "SomeOtherReallyLongNonsense";
+	ft_memccpy(ft_memccpy_str4dest, ft_memccpy_str3src, 'p', 5);
+	printf("\n		LIBC SOURCE: %s", ft_memccpy_str1src);
+	printf("\n 		MINE SOURCE: %s", ft_memccpy_str3src);
+	printf("\n		LIBC DEST: %s", ft_memccpy_str2dest);
+	printf("\n 		MINE DEST: %s", ft_memccpy_str4dest);
+
+	//Regular memccpy will just throw an error if you try to pass it n that is too large.
+	//memccpy(ft_memccpy_str2dest, ft_memccpy_str1src, 'p', 55);
+
+
 // 5 ft_memmove
 // 6 ft_memchr
 // 7 ft_memcmp

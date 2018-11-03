@@ -11,3 +11,16 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
+{
+	while (n-- >= 1)
+	{
+		*((char*)dst) = *((char*)src);
+		dst++;
+		if(*((char*)src) == (unsigned char)c)
+			return (dst);
+		src++;		
+	}
+	return (NULL);
+}
