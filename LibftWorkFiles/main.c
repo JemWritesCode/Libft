@@ -138,7 +138,6 @@ printf("\n\n=====Testing 12 - ft_strcat=====");
 	printf("\n		MINE: %s", ft_strcat(ft_strcat_str3, ft_strcat_str4));
 
 printf("\n\n=====Testing 13 - ft_strncat=====");
-	//CURRENTLY WORKING ON
    	char ft_strncat_str1[50], ft_strncat_str2[50];
    	strcpy(ft_strncat_str1,  "This is source");
    	strcpy(ft_strncat_str2, "This is destination");
@@ -146,10 +145,31 @@ printf("\n\n=====Testing 13 - ft_strncat=====");
 	char ft_strncat_str3[50], ft_strncat_str4[50];
    	strcpy(ft_strncat_str3,  "This is source");
    	strcpy(ft_strncat_str4, "This is destination");
-	printf("\n		LIBC: %s", ft_strncat(ft_strncat_str3, ft_strncat_str4, 4));
+	printf("\n		MINE: %s", ft_strncat(ft_strncat_str3, ft_strncat_str4, 4));
 
+printf("\n\n=====Testing 14 - ft_strlcat=====");
+//CURRENTLY WORKING ON
+   	char ft_strlcat_dst1[13] = "Hello";
+   	char ft_strlcat_src2[] = "Goodbye";
+	printf("\n		LIBC: %zu", strlcat(ft_strlcat_dst1, ft_strlcat_src2, 13));
+	char ft_strlcat_dst3[13] = "Hello";
+   	char ft_strlcat_src4[] = "Goodbye";
+	printf("\n		MINE: %zu", ft_strlcat(ft_strlcat_dst3, ft_strlcat_src4, 13));
+	printf("\n		LIBC: %s", ft_strlcat_dst1);
+	printf("\n		MINE: %s", ft_strlcat_dst3);
 
-// 14 ft_strlcat
+	printf("\n");
+	char ft_strlcat_dst5[13] = "Hello";
+	char ft_strlcat_dst7[13] = "Hello";
+   	char ft_strlcat_src6[] = "Goodbye";
+   	char ft_strlcat_src8[] = "Goodbye";
+   	printf("\n		LIBC: %s", ft_strlcat_dst5);
+	printf("\n		MINE: %s", ft_strlcat_dst7);
+	printf("\n		LIBC: %zu", strlcat(ft_strlcat_dst5, ft_strlcat_src6, 12));
+	printf("\n		MINE: %zu", ft_strlcat(ft_strlcat_dst7, ft_strlcat_src8, 12));
+	printf("\n		LIBC: %s", ft_strlcat_dst5);
+	printf("\n		MINE: %s", ft_strlcat_dst7);
+
 
 printf("\n\n=====Testing 15 - ft_strchr=====");
 	char strchr_str1[] = "Yellow Butterfly";
