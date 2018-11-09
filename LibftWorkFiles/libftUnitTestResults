@@ -1,0 +1,221 @@
+42FILECHECKER INFO:\n\nHere is the full standard output of the libft-unit-test running with your libft.\nSee also the clean logfile provided by the library at the following path:\n/nfs/2018/j/jcope/Desktop/42FileChecker/libft-unit-test/result.log\n\n\n\n------------------------------------------------\n\n\n\n make re -C /nfs/2018/j/jcope/Desktop/Libft/libft 
+/bin/rm -f ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o ft_memchr.o ft_memcmp.o ft_strlen.o ft_strdup.o ft_strcpy.o ft_strncpy.o ft_strcat.o ft_strncat.o ft_strlcat.o ft_strchr.o ft_strrchr.o ft_strstr.o ft_strnstr.o ft_strcmp.o ft_strncmp.o ft_atoi.o ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o ft_isprint.o ft_toupper.o ft_tolower.o ft_memalloc.o ft_memdel.o ft_strnew.o ft_strdel.o ft_strclr.o ft_striter.o ft_striteri.o ft_strmap.o ft_strmapi.o ft_strequ.o ft_strnequ.o ft_strsub.o ft_strjoin.o ft_strtrim.o ft_strsplit.o ft_itoa.o ft_putchar.o ft_putstr.o ft_putendl.o ft_putnbr.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o ft_lstnew.o ft_lstdelone.o ft_lstdel.o ft_lstadd.o ft_lstiter.o ft_lstmap.o
+/bin/rm -f libft.a
+gcc ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strdup.c ft_strcpy.c ft_strncpy.c ft_strcat.c ft_strncat.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strstr.c ft_strnstr.c ft_strcmp.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_memalloc.c ft_memdel.c ft_strnew.c ft_strdel.c ft_strclr.c ft_striter.c ft_striteri.c ft_strmap.c ft_strmapi.c ft_strequ.c ft_strnequ.c ft_strsub.c ft_strjoin.c ft_strtrim.c ft_strsplit.c ft_itoa.c ft_putchar.c ft_putstr.c ft_putendl.c ft_putnbr.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_lstmap.c -Wall -Wextra -Werror -I ./libft.h -c 
+ar -rc libft.a ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o ft_memchr.o ft_memcmp.o ft_strlen.o ft_strdup.o ft_strcpy.o ft_strncpy.o ft_strcat.o ft_strncat.o ft_strlcat.o ft_strchr.o ft_strrchr.o ft_strstr.o ft_strnstr.o ft_strcmp.o ft_strncmp.o ft_atoi.o ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o ft_isprint.o ft_toupper.o ft_tolower.o ft_memalloc.o ft_memdel.o ft_strnew.o ft_strdel.o ft_strclr.o ft_striter.o ft_striteri.o ft_strmap.o ft_strmapi.o ft_strequ.o ft_strnequ.o ft_strsub.o ft_strjoin.o ft_strtrim.o ft_strsplit.o ft_itoa.o ft_putchar.o ft_putstr.o ft_putendl.o ft_putnbr.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o ft_lstnew.o ft_lstdelone.o ft_lstdel.o ft_lstadd.o ft_lstiter.o ft_lstmap.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strstr.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strnstr.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strncmp.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_memalloc.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_memdel.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strnew.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strdel.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strclr.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_striter.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_striteri.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strmap.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strmapi.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strequ.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strnequ.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strsub.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strjoin.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strtrim.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strsplit.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_itoa.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_putendl.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_putchar_fd.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_putstr_fd.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_putendl_fd.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_putnbr_fd.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_lstnew.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_lstdelone.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_lstdel.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_lstadd.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_lstiter.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_lstmap.o) has no symbols
+ranlib libft.a
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strstr.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strnstr.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strncmp.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_memalloc.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_memdel.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strnew.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strdel.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strclr.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_striter.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_striteri.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strmap.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strmapi.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strequ.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strnequ.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strsub.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strjoin.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strtrim.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_strsplit.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_itoa.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_putendl.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_putchar_fd.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_putstr_fd.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_putendl_fd.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_putnbr_fd.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_lstnew.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_lstdelone.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_lstdel.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_lstadd.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_lstiter.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libft.a(ft_lstmap.o) has no symbols
+[  Cleaning #0  ]
+‚M-^^§  rm -f obj/src/main.o obj/src/test_functions.o obj/src/display_test_result.o obj/src/signal.o obj/src/sandbox.o obj/src/bench_functions.o obj/src/additional_functions.o obj/hardcore-mode/hardcore-main.o obj/hardcore-mode/error.o obj/hardcore-mode/ncurses-display.o obj/hardcore-mode/test-init.o obj/hardcore-mode/test-utils.o obj/hardcore-mode/test-strcpy.o obj/hardcore-mode/test-strcmp.o obj/hardcore-mode/test-strncmp.o obj/hardcore-mode/test-memset.o obj/hardcore-mode/test-memcpy.o obj/hardcore-mode/test-memccpy.o obj/hardcore-mode/test-memmove.o obj/hardcore-mode/test-memchr.o obj/hardcore-mode/test-memcmp.o obj/hardcore-mode/test-strlen.o obj/hardcore-mode/test-strncpy.o obj/hardcore-mode/test-strcat.o obj/hardcore-mode/test-strncat.o obj/hardcore-mode/test-strchr.o obj/hardcore-mode/test-strrchr.o obj/hardcore-mode/test-strstr.o 
+‚M-^^§  rm -f libft.so assets/libft.a assetslibtests assets/malloc.dylib 
+‚M-^^§  rm -f run_test 
+ make -j 3 -C /nfs/2018/j/jcope/Desktop/Libft/libft 
+make[1]: `all' is up to date.
+ cp /nfs/2018/j/jcope/Desktop/Libft/libft/libft.a assets/ 
+‚M-^^§  clang -shared -fPIC assets/tmp/ft_atoi.o assets/tmp/ft_bzero.o assets/tmp/ft_isalnum.o assets/tmp/ft_isalpha.o assets/tmp/ft_isascii.o assets/tmp/ft_isdigit.o assets/tmp/ft_isprint.o assets/tmp/ft_itoa.o assets/tmp/ft_lstadd.o assets/tmp/ft_lstdel.o assets/tmp/ft_lstdelone.o assets/tmp/ft_lstiter.o assets/tmp/ft_lstmap.o assets/tmp/ft_lstnew.o assets/tmp/ft_memalloc.o assets/tmp/ft_memccpy.o assets/tmp/ft_memchr.o assets/tmp/ft_memcmp.o assets/tmp/ft_memcpy.o assets/tmp/ft_memdel.o assets/tmp/ft_memmove.o assets/tmp/ft_memset.o assets/tmp/ft_putchar.o assets/tmp/ft_putchar_fd.o assets/tmp/ft_putendl.o assets/tmp/ft_putendl_fd.o assets/tmp/ft_putnbr.o assets/tmp/ft_putnbr_fd.o assets/tmp/ft_putstr.o assets/tmp/ft_putstr_fd.o assets/tmp/ft_strcat.o assets/tmp/ft_strchr.o assets/tmp/ft_strclr.o assets/tmp/ft_strcmp.o assets/tmp/ft_strcpy.o assets/tmp/ft_strdel.o assets/tmp/ft_strdup.o assets/tmp/ft_strequ.o assets/tmp/ft_striter.o assets/tmp/ft_striteri.o assets/tmp/ft_strjoin.o assets/tmp/ft_strlcat.o assets/tmp/ft_strlen.o assets/tmp/ft_strmap.o assets/tmp/ft_strmapi.o assets/tmp/ft_strncat.o assets/tmp/ft_strncmp.o assets/tmp/ft_strncpy.o assets/tmp/ft_strnequ.o assets/tmp/ft_strnew.o assets/tmp/ft_strnstr.o assets/tmp/ft_strrchr.o assets/tmp/ft_strsplit.o assets/tmp/ft_strstr.o assets/tmp/ft_strsub.o assets/tmp/ft_strtrim.o assets/tmp/ft_tolower.o assets/tmp/ft_toupper.o -o libft.so 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/src/main.o -c src/main.c 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/src/test_functions.o -c src/test_functions.c 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/src/display_test_result.o -c src/display_test_result.c 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/src/signal.o -c src/signal.c 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/src/sandbox.o -c src/sandbox.c 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/src/bench_functions.o -c src/bench_functions.c 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/src/additional_functions.o -c src/additional_functions.c 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/hardcore-main.o -c hardcore-mode/hardcore-main.c 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/error.o -c hardcore-mode/error.c 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/ncurses-display.o -c hardcore-mode/ncurses-display.c 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-init.o -c hardcore-mode/test-init.c 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-utils.o -c hardcore-mode/test-utils.c 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strcpy.o -c hardcore-mode/test-strcpy.c 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strcmp.o -c hardcore-mode/test-strcmp.c 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strncmp.o -c hardcore-mode/test-strncmp.c 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-memset.o -c hardcore-mode/test-memset.c 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-memcpy.o -c hardcore-mode/test-memcpy.c 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-memccpy.o -c hardcore-mode/test-memccpy.c 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-memmove.o -c hardcore-mode/test-memmove.c 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-memchr.o -c hardcore-mode/test-memchr.c 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-memcmp.o -c hardcore-mode/test-memcmp.c 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strlen.o -c hardcore-mode/test-strlen.c 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strncpy.o -c hardcore-mode/test-strncpy.c 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strcat.o -c hardcore-mode/test-strcat.c 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strncat.o -c hardcore-mode/test-strncat.c 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strchr.o -c hardcore-mode/test-strchr.c 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strrchr.o -c hardcore-mode/test-strrchr.c 
+[  Building #0  ]
+‚M-^^§  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strstr.o -c hardcore-mode/test-strstr.c 
+[  Linking #0  ]
+‚M-^^§  clang -Werror -Wall -Wextra -O2 -funroll-loops -lncurses -o assets/libtests obj/src/main.o obj/src/test_functions.o obj/src/display_test_result.o obj/src/signal.o obj/src/sandbox.o obj/src/bench_functions.o obj/src/additional_functions.o obj/hardcore-mode/hardcore-main.o obj/hardcore-mode/error.o obj/hardcore-mode/ncurses-display.o obj/hardcore-mode/test-init.o obj/hardcore-mode/test-utils.o obj/hardcore-mode/test-strcpy.o obj/hardcore-mode/test-strcmp.o obj/hardcore-mode/test-strncmp.o obj/hardcore-mode/test-memset.o obj/hardcore-mode/test-memcpy.o obj/hardcore-mode/test-memccpy.o obj/hardcore-mode/test-memmove.o obj/hardcore-mode/test-memchr.o obj/hardcore-mode/test-memcmp.o obj/hardcore-mode/test-strlen.o obj/hardcore-mode/test-strncpy.o obj/hardcore-mode/test-strcat.o obj/hardcore-mode/test-strncat.o obj/hardcore-mode/test-strchr.o obj/hardcore-mode/test-strrchr.o obj/hardcore-mode/test-strstr.o
+ clang -Werror -Wall -Wextra -dynamiclib assets/malloc.c -I ./include -o assets/malloc.dylib 
+ clang -Werror -Wall -Wextra assets/wrapper.c -I ./include -o run_test 
+RUNING TESTS:
+                      First part
+.-"-.     .-"-.     .-"-.     .-"-.     .-"-.     .-"-.
+     "-.-"     "-.-"     "-.-"     "-.-"     "-.-"    
+ft_memset:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_bzero:      [OK] [OK] [OK] [OK] 
+ft_memcpy:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_memccpy:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_memmove:    [OK] [OK] [FAILED] [FAILED] [FAILED] [OK] [OK] [CRASH] [CRASH] [OK] [OK] [OK] 
+[fail]: your memmove does not work with \0 and others unsigned char codes
+[fail]: your memmove does not work with integers copy
+[fail]: your memmove does not support the overlap (test 1)
+[crash]: your memmove does not work with a 128Mo data input !
+[crash]: your memmove crash because it read too many bytes or attempt to read on dst !
+
+ft_memchr:     [OK] [OK] [OK] [OK] [OK] [CRASH] [OK] [OK] 
+[crash]: your memchr crash because it read too many bytes from s or attempt to write on s !
+
+ft_memcmp:     [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [CRASH] [OK] [OK] 
+[fail]: your memcmp does not work with basic input
+[crash]: your memcmp crash because it read too many bytes !
+
+ft_strlen:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strdup:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strcpy:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strncpy:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strcat:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strncat:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strlcat:    [FAILED] [FAILED] [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [FAILED] [OK] [OK] 
+[fail]: your strlcat does not work with basic input
+[fail]: your strlcat does not work with basic input
+[fail]: your strlcat does not work with a size of 0
+[fail]: your strlcat return value is false
+
+ft_strchr:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strrchr:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strstr:     [MISSING]
+ft_strnstr:    [MISSING]
+ft_strcmp:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strncmp:    [MISSING]
+ft_atoi:       [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [KO] [KO] [OK] 
+[KO]: your atoi does not work with over long max value
+[KO]: your atoi does not work with over long min value
+
+ft_isalpha:    [OK] 
+ft_isdigit:    [OK] 
+ft_isalnum:    [OK] 
+ft_isascii:    [OK] 
+ft_isprint:    [OK] 
+ft_toupper:    [OK] 
+ft_tolower:    [OK] 
+
+In this part, you can choose to protect your function or not to,
+a color code will tell you if your function is protected/not BUT stay coherent !
+[M-^_M-^[° ] --> protected
+[M-^_M-^R• ] --> not protected
+                     Second part
+ __)(__  __)(__  __)(__  __)(__  __)(__  __)(__  __)(__  __)
+(______)(______)(______)(______)(______)(______)(______)(___
+
+ft_memalloc:   [MISSING]
+ft_memdel:     [MISSING]
+ft_strnew:     [MISSING]
+ft_strdel:     [MISSING]
+ft_strclr:     [MISSING]
+ft_striter:    [MISSING]
+ft_striteri:   [MISSING]
+ft_strmap:     [MISSING]
+ft_strmapi:    [MISSING]
+ft_strequ:     [MISSING]
+ft_strnequ:    [MISSING]
+ft_strsub:     [MISSING]
+ft_strjoin:    [MISSING]
+ft_strtrim:    [MISSING]
+ft_strsplit:   [MISSING]
+ft_itoa:       [MISSING]
+ft_putchar:    [OK] [OK] [KO] 
+[KO]: your putchar does not work with unicode
+
+ft_putstr:     [OK] [OK] [M-^_M-^R• ] 
+ft_putendl:    [MISSING]
+ft_putnbr:     [OK] [OK] [OK] [OK] [OK] 
+ft_putchar_fd: [MISSING]
+ft_putstr_fd:  [MISSING]
+ft_putendl_fd: [MISSING]
+ft_putnbr_fd:  [MISSING]
+See result.log for more informations !

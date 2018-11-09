@@ -148,7 +148,6 @@ printf("\n\n=====Testing 13 - ft_strncat=====");
 	printf("\n		MINE: %s", ft_strncat(ft_strncat_str3, ft_strncat_str4, 4));
 
 printf("\n\n=====Testing 14 - ft_strlcat=====");
-//CURRENTLY WORKING ON
    	char ft_strlcat_dst1[13] = "Hello";
    	char ft_strlcat_src2[] = "Goodbye";
 	printf("\n		LIBC: %zu", strlcat(ft_strlcat_dst1, ft_strlcat_src2, 13));
@@ -158,6 +157,8 @@ printf("\n\n=====Testing 14 - ft_strlcat=====");
 	printf("\n		LIBC: %s", ft_strlcat_dst1);
 	printf("\n		MINE: %s", ft_strlcat_dst3);
 
+	// when given incorrect dstsize that is shorter than dst, like the man mentions.
+	//12 works, but 1 doesn't. 
 	printf("\n");
 	char ft_strlcat_dst5[13] = "Hello";
 	char ft_strlcat_dst7[13] = "Hello";
@@ -165,10 +166,22 @@ printf("\n\n=====Testing 14 - ft_strlcat=====");
    	char ft_strlcat_src8[] = "Goodbye";
    	printf("\n		LIBC: %s", ft_strlcat_dst5);
 	printf("\n		MINE: %s", ft_strlcat_dst7);
-	printf("\n		LIBC: %zu", strlcat(ft_strlcat_dst5, ft_strlcat_src6, 12));
-	printf("\n		MINE: %zu", ft_strlcat(ft_strlcat_dst7, ft_strlcat_src8, 12));
+	printf("\n		LIBC: %zu", strlcat(ft_strlcat_dst5, ft_strlcat_src6, 2));
+	printf("\n		MINE: %zu", ft_strlcat(ft_strlcat_dst7, ft_strlcat_src8, 2));
 	printf("\n		LIBC: %s", ft_strlcat_dst5);
 	printf("\n		MINE: %s", ft_strlcat_dst7);
+
+	printf("\n");
+	char ft_strlcat_dst9[13] = "Hello";
+	char ft_strlcat_dst10[13] = "Hello";
+   	char ft_strlcat_src11[] = "Goodbye";
+   	char ft_strlcat_src12[] = "Goodbye";
+   	printf("\n		LIBC: %s", ft_strlcat_dst9);
+	printf("\n		MINE: %s", ft_strlcat_dst10);
+	printf("\n		LIBC: %zu", strlcat(ft_strlcat_dst9, ft_strlcat_src11, 0));
+	printf("\n		MINE: %zu", ft_strlcat(ft_strlcat_dst10, ft_strlcat_src12, 0));
+	printf("\n		LIBC: %s", ft_strlcat_dst9);
+	printf("\n		MINE: %s", ft_strlcat_dst10);
 
 
 printf("\n\n=====Testing 15 - ft_strchr=====");
@@ -197,8 +210,18 @@ printf("\n\n=====Testing 16 - ft_strrchr=====");
 	printf("\n 		LIBC: %s", strrchr(strrchr_str4,'l'));
 	printf("\n 		MINE: %s", ft_strrchr(strrchr_str4,'l'));
 
+printf("\n\n=====Testing 17 - ft_strstr=====");
+//CURRENTLY WORKING ON
+   	// char ft_strstr_dst1[13] = "Hello";
+   	// char ft_strstr_src2[] = "Goodbye";
+	// printf("\n		LIBC: %zu", strstr(ft_strstr_dst1, ft_strstr_src2, 13));
+	// char ft_strstr_dst3[13] = "Hello";
+   	// char ft_strstr_src4[] = "Goodbye";
+	// printf("\n		MINE: %zu", ft_strstr(ft_strstr_dst3, ft_strstr_src4, 13));
+	// printf("\n		LIBC: %s", ft_strstr_dst1);
+	// printf("\n		MINE: %s", ft_strstr_dst3);	
 
-// 17 ft_strstr
+
 // 18 ft_strnstr
 // 19 ft_strcmp
 // 20 ft_strncmp
