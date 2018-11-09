@@ -143,7 +143,7 @@ clean:
 fclean: clean
 	/bin/rm -f $(NAME)
 
-re: fclean all 
+re: fclean all
 
 maintest:
 	gcc $(SRCS) ../LibftWorkFiles/main.c  -I $(HDR) $(FLAGS) -o MainTest
