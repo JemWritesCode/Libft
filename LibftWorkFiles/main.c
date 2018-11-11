@@ -9,6 +9,7 @@
 #include <string.h>
 #include <strings.h>
 #include <ctype.h>
+#include <limits.h>
 int main(void)
 {
 setbuf(stdout, NULL); // set all writes to stdout to be unbuffered. This helps keep the printfs in correct order.
@@ -231,6 +232,19 @@ printf("\n\n=====Testing 17 - ft_strstr=====");
 printf("\n\n=====Testing 21 - ft_atoi=====");
 	printf("\n		LIBC: %d", atoi("HelloWorld"));
 	printf("\n 		MINE: %d", ft_atoi("HelloWorld"));
+
+	printf("\n		LIBC: %d", atoi("91"));
+	printf("\n 		MINE: %d", ft_atoi("91"));	
+
+	printf("\n		LIBC: %d", atoi("a"));
+	printf("\n 		MINE: %d", ft_atoi("a"));
+
+	printf("\n		LIBC: %d", atoi("2147483647")); //Max Long
+	printf("\n 		MINE: %d", ft_atoi("2147483647"));	
+
+	printf("\n		LIBC: %d", atoi("2147483648")); //Max Long + 1
+	printf("\n 		MINE: %d", ft_atoi("2147483648f"));	
+	
 
 printf("\n\n=====Testing 22 - ft_isalpha=====");
 	printf("\n 		LIBC: %d", isalpha('a'));
