@@ -148,6 +148,8 @@ printf("\n\n=====Testing 13 - ft_strncat=====");
 	printf("\n		MINE: %s", ft_strncat(ft_strncat_str3, ft_strncat_str4, 4));
 
 printf("\n\n=====Testing 14 - ft_strlcat=====");
+	// I have a strlcatPythonTutor.c file with step by step explaination in LibftWorkFiles
+	//man: Note that room for the NUL should be included in dstsize.
    	char ft_strlcat_dst1[13] = "Hello";
    	char ft_strlcat_src2[] = "Goodbye";
 	printf("\n		LIBC: %zu", strlcat(ft_strlcat_dst1, ft_strlcat_src2, 13));

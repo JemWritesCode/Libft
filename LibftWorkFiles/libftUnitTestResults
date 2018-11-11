@@ -160,12 +160,7 @@ ft_strcpy:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
 ft_strncpy:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_strcat:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_strncat:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
-ft_strlcat:    [FAILED] [FAILED] [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [FAILED] [OK] [OK] 
-[fail]: your strlcat does not work with basic input
-[fail]: your strlcat does not work with basic input
-[fail]: your strlcat does not work with a size of 0
-[fail]: your strlcat return value is false
-
+ft_strlcat:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_strchr:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_strrchr:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_strstr:     [MISSING]

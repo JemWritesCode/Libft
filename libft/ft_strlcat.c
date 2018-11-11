@@ -24,8 +24,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	odst = (char*)dst;
 	while (n-- != 0 && *dst != '\0')
 		dst++;
-	dlen = dst - odst; // counts the distance between end of the dst /0 and beginning, so 5 from Hello
-	n = dstsize - dlen; // n 13 minus 5 = 8
+	dlen = dst - odst;
+	n = dstsize - dlen;
 	if (n-- == 0)
 		return (dlen + ft_strlen(src));
 	while (*src != '\0')
