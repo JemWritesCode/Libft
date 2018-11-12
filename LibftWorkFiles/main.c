@@ -243,8 +243,16 @@ printf("\n\n=====Testing 21 - ft_atoi=====");
 	printf("\n 		MINE: %d", ft_atoi("2147483647"));	
 
 	printf("\n		LIBC: %d", atoi("2147483648")); //Max Long + 1
-	printf("\n 		MINE: %d", ft_atoi("2147483648f"));	
-	
+	printf("\n 		MINE: %d", ft_atoi("2147483648"));	
+
+	// These two are not required by mouli & actually will fail if you pass because of the prototype needed to handle this.
+	//your atoi does not work with over long max value
+	//printf("\n		LIBC(over long max value): %d", atoi("99999999999999999999999999"));
+	//printf("\n 		MINE(over long max value): %d", ft_atoi("99999999999999999999999999"));
+
+	////your atoi does not work with over long min value
+	//printf("\n		LIBC(over long min value): %d", atoi("-99999999999999999999999999"));
+	//printf("\n 		MINE(over long min value): %d", ft_atoi("-99999999999999999999999999"));
 
 printf("\n\n=====Testing 22 - ft_isalpha=====");
 	printf("\n 		LIBC: %d", isalpha('a'));
@@ -325,6 +333,7 @@ printf("\n%s ======================Part 2 Function TESTS====================== %
 // 44 ft_itoa
 
 printf("\n\n=====Testing 45 - ft_putchar=====");
+	// It can't handle unicode but similar to above that would require a different prototype and would fail mouli.
 	printf("\n		EXPECT: z");
 	printf("\n 		RESULT: ");
 	ft_putchar('z');
