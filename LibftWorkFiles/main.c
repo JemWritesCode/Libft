@@ -77,10 +77,12 @@ printf("\n\n=====Testing 4 - ft_memccpy=====");
 	//memccpy(ft_memccpy_str2dest, ft_memccpy_str1src, 'p', 55);
 
 printf("\n\n=====Testing 5 - ft_memmove=====");
+	char ft_memmove_src1[16] = "Stumpy is cool!";
+	char ft_memmove_src2[16] = "Stumpy is cool!";
 	char ft_memmove_dst1[16];
 	char ft_memmove_dst2[16];
-	printf("\n		LIBC: %s", memmove(ft_memmove_dst1, "Stumpy is cool!", 6));
-	printf("\n 		MINE: %s", ft_memmove(ft_memmove_dst2, "Stumpy is cool!", 6));
+	printf("\n		LIBC: %s", memmove(ft_memmove_dst1, ft_memmove_src1, 6));
+	printf("\n 		MINE: %s", ft_memmove(ft_memmove_dst2, ft_memmove_src2, 6));
 
 printf("\n\n=====Testing 6 - ft_memchr=====");
 	char ft_memchr_str1[] = "Yellow Butterfly";
