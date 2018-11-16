@@ -13,14 +13,29 @@
 #include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
-{
-	size_t i;
+ {
+	char	*temp[len];
 
-	i = 0;
-	while (((char*)src)[i] != '\0' && i < len)
-	{
-		((char*)dst)[i] = ((char*)src)[i];
-		i++;
-	}
-	return (dst);
-}
+	ft_memcpy(temp, src, len);
+	ft_memcpy(dst, temp, len);
+ 	return (dst);
+ }
+
+
+
+
+
+
+// void	*ft_memmove(void *dst, const void *src, size_t len)
+// {
+// 
+// 	size_t i;
+// 	
+// 	i = 0;
+// 	while (((char*)src)[i] != '\0' && i < len)
+// 	{
+// 		((char*)dst)[i] = ((char*)src)[i];
+// 		i++;
+// 	}
+// 	return (dst);
+// }
