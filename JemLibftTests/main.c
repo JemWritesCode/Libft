@@ -1,5 +1,4 @@
 // This file is for testing only.
-//Should be able to Drop my test folder into a libft directory and have the tests run.
 
 #define KGRN  "\x1B[32m" //Make text Green.
 #define KRED  "\x1B[31m" //Red
