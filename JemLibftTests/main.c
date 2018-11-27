@@ -261,6 +261,11 @@ printf("\n\n=====Testing 21 - ft_atoi=====");
 	printf("\n		LIBC: %d", atoi("2147483648")); //Max Long + 1
 	printf("\n 		MINE: %d", ft_atoi("2147483648"));	
 
+	//libc returns 0 here because atoi is only supposed to handle the initial non-printing characters before + || -
+    char    *atoi_num1 = "\t\v\f\r\n \f- \f\t\n\r    06050";
+	  printf("\n		LIBC: %d", atoi(atoi_num1));
+	  printf("\n 		MINE: %d", ft_atoi(atoi_num1));
+
 	// These two are not required by mouli & actually will fail if you pass because of the prototype needed to handle this.
 	//your atoi does not work with over long max value
 	//printf("\n		LIBC(over long max value): %d", atoi("99999999999999999999999999"));

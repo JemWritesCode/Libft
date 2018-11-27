@@ -143,13 +143,8 @@ ft_memccpy:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
 ft_memmove:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [CRASH] 
 [crash]: your memmove use malloc ? why ?
 
-ft_memchr:     [OK] [OK] [OK] [OK] [OK] [CRASH] [OK] [OK] 
-[crash]: your memchr crash because it read too many bytes from s or attempt to write on s !
-
-ft_memcmp:     [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [CRASH] [OK] [OK] 
-[fail]: your memcmp does not work with basic input
-[crash]: your memcmp crash because it read too many bytes !
-
+ft_memchr:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_memcmp:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_strlen:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_strdup:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_strcpy:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
@@ -163,11 +158,7 @@ ft_strstr:     [MISSING]
 ft_strnstr:    [MISSING]
 ft_strcmp:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_strncmp:    [MISSING]
-ft_atoi:       [OK] [FAILED] [OK] [FAILED] [FAILED] [OK] [FAILED] [OK] [OK] [OK] [OK] [KO] [KO] [OK] 
-[fail]: your atoi does not work with negative numbers
-[fail]: your atoi is not working with blanks
-[fail]: your atoi is not working with blanks
-[fail]: your atoi is not working with blanks
+ft_atoi:       [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [KO] [KO] [OK] 
 [KO]: your atoi does not work with over long max value
 [KO]: your atoi does not work with over long min value
 

@@ -19,11 +19,14 @@ int		ft_atoi(const char *str)
 
 	number = 0;
 	sign = 1;
+
 	while (*str == '\n' || *str == ' ' || *str == '\t' || *str == '\r' ||
-			*str == '\f' || *str == '\v' || *str == '+' || *str == '-')
+			*str == '\f' || *str == '\v' )
 		str++;
 	if (*str == '-')
-		sign = -1;
+		sign = -1;	
+	if (*str == '-' || *str == '+')
+		str++;
 	while (*str >= '0' && *str <= '9')
 	{
 		number = number * 10 + *str - '0';
