@@ -77,22 +77,27 @@ printf("\n\n=====Testing 4 - ft_memccpy=====");
 	//memccpy(ft_memccpy_str2dest, ft_memccpy_str1src, 'p', 55);
 
 printf("\n\n=====Testing 5 - ft_memmove=====");
-	//char ft_memmove_src1[16] = "Stumpy is cool!";
-	//char ft_memmove_src2[16] = "Stumpy is cool!";
-	//char ft_memmove_dst1[16];
-	//char ft_memmove_dst2[16];
-	//printf("\n		LIBC: %s", memmove(ft_memmove_dst1, ft_memmove_src1, 6));
-	//printf("\n 		MINE: %s", ft_memmove(ft_memmove_dst2, ft_memmove_src2, 6));
+	// Libft unit tester does highlight that I can do this without malloc, but I think it's more readable this way.
+	// Mine seems to segfault faster though -- probably some kind of limit on how much a program can use before it seg faults?
+	// I saw other people who had passed mouli even while using malloc so I think it should be fine.
+	char ft_memmove_src1[16] = "Stumpy is cool!";
+	char ft_memmove_src2[16] = "Stumpy is cool!";
+	char ft_memmove_dst1[16];
+	char ft_memmove_dst2[16];
+	printf("\n		LIBC: %s", memmove(ft_memmove_dst1, ft_memmove_src1, 6));
+	printf("\n 		MINE: %s", ft_memmove(ft_memmove_dst2, ft_memmove_src2, 6));
 
-//libc seems to be failing this despite this being a rip from libft-unit-test that is failing it.
-	int		size = 128 * 1024 * 1024;
-	char	*dst = (char *)malloc(sizeof(char) * size);
-	char	*data = (char *)malloc(sizeof(char) * size);
-	
-	memset(data, 'A', size);
-	memmove(dst, data, size);
-	printf("DstTest: %s", dst);
+	// Commenting out because it makes a very long line of A. But it does work with the large string.
+	// Keep in mind that even regular libc memmove will seg fault if you run the program several times in a row.
+	//int		size = 128 * 1024 * 1024;
+	//char	*dst = (char *)malloc(sizeof(char) * size);
+	//char	*data = (char *)malloc(sizeof(char) * size);
 
+	//memset(data, 'A', size);
+	//if (!dst)
+	//	printf("JemTest Error in 5 - ft_memmove: dst does not exist.");
+	//ft_memmove(dst, data, size);
+	//printf("DstTest: %s", dst);
 
 printf("\n\n=====Testing 6 - ft_memchr=====");
 	char ft_memchr_str1[] = "Yellow Butterfly";
@@ -173,7 +178,6 @@ printf("\n\n=====Testing 14 - ft_strlcat=====");
 	printf("\n		MINE: %s", ft_strlcat_dst3);
 
 	// when given incorrect dstsize that is shorter than dst, like the man mentions.
-	//12 works, but 1 doesn't. 
 	printf("\n");
 	char ft_strlcat_dst5[13] = "Hello";
 	char ft_strlcat_dst7[13] = "Hello";

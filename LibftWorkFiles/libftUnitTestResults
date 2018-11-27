@@ -140,12 +140,8 @@ ft_memset:     [OK] [OK] [OK] [OK] [OK] [OK] [OK]
 ft_bzero:      [OK] [OK] [OK] [OK] 
 ft_memcpy:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_memccpy:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
-ft_memmove:    [OK] [OK] [FAILED] [FAILED] [FAILED] [OK] [OK] [CRASH] [CRASH] [OK] [OK] [OK] 
-[fail]: your memmove does not work with \0 and others unsigned char codes
-[fail]: your memmove does not work with integers copy
-[fail]: your memmove does not support the overlap (test 1)
-[crash]: your memmove does not work with a 128Mo data input !
-[crash]: your memmove crash because it read too many bytes or attempt to read on dst !
+ft_memmove:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [CRASH] 
+[crash]: your memmove use malloc ? why ?
 
 ft_memchr:     [OK] [OK] [OK] [OK] [OK] [CRASH] [OK] [OK] 
 [crash]: your memchr crash because it read too many bytes from s or attempt to write on s !
@@ -167,7 +163,11 @@ ft_strstr:     [MISSING]
 ft_strnstr:    [MISSING]
 ft_strcmp:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_strncmp:    [MISSING]
-ft_atoi:       [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [KO] [KO] [OK] 
+ft_atoi:       [OK] [FAILED] [OK] [FAILED] [FAILED] [OK] [FAILED] [OK] [OK] [OK] [OK] [KO] [KO] [OK] 
+[fail]: your atoi does not work with negative numbers
+[fail]: your atoi is not working with blanks
+[fail]: your atoi is not working with blanks
+[fail]: your atoi is not working with blanks
 [KO]: your atoi does not work with over long max value
 [KO]: your atoi does not work with over long min value
 

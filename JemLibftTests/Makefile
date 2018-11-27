@@ -36,11 +36,11 @@ norm:
 	norminette -R CheckForbiddenSourceHeader ../libft
 
 maintest:
-	gcc $(SRCS) ../LibftWorkFiles/main.c  -I $(HDR) $(FLAGS) -o MainTest
+	gcc $(SRCS) ./main.c  -I $(HDR) $(FLAGS) -o MainTest
 	ar -rc $(NAME) $(OBJS)
 	ranlib $(NAME)
 
 debug:
-	gcc $(SRCS) ../LibftWorkFiles/main.c  -I $(HDR) $(FLAGS) -o Debuggable -g
+	gcc $(SRCS) ./main.c  -I $(HDR) $(FLAGS) -o Debuggable -g
 	ar -rc $(NAME) $(OBJS)
 	ranlib $(NAME)
