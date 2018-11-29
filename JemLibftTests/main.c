@@ -230,14 +230,14 @@ printf("\n\n=====Testing 16 - ft_strrchr=====");
 
 printf("\n\n=====Testing 17 - ft_strstr=====");
 //CURRENTLY WORKING ON
-   	// char ft_strstr_dst1[13] = "Hello";
-   	// char ft_strstr_src2[] = "Goodbye";
-	// printf("\n		LIBC: %zu", strstr(ft_strstr_dst1, ft_strstr_src2, 13));
-	// char ft_strstr_dst3[13] = "Hello";
-   	// char ft_strstr_src4[] = "Goodbye";
-	// printf("\n		MINE: %zu", ft_strstr(ft_strstr_dst3, ft_strstr_src4, 13));
-	// printf("\n		LIBC: %s", ft_strstr_dst1);
-	// printf("\n		MINE: %s", ft_strstr_dst3);	
+   	 char ft_strstr_dst1[] = "Hello person I know!";
+   	 char ft_strstr_src2[] = "person";
+	 printf("\n		LIBC: %s", strstr(ft_strstr_dst1, ft_strstr_src2));
+	 char ft_strstr_dst3[] = "Hello person I know!";
+   	 char ft_strstr_src4[] = "person";
+	 printf("\n		MINE: %s", ft_strstr(ft_strstr_dst3, ft_strstr_src4));
+	 printf("\n		LIBC: %s", ft_strstr_dst1);
+	 printf("\n		MINE: %s", ft_strstr_dst3);	
 
 
 // 18 ft_strnstr
