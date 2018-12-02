@@ -229,7 +229,7 @@ printf("\n\n=====Testing 16 - ft_strrchr=====");
 	printf("\n 		MINE: %s", ft_strrchr(strrchr_str4,'l'));
 
 printf("\n\n=====Testing 17 - ft_strstr=====");
-//CURRENTLY WORKING ON
+
    	 char ft_strstr_dst1[] = "Hello person I know!";
    	 char ft_strstr_src2[] = "person";
 	 printf("\n		LIBC: %s", strstr(ft_strstr_dst1, ft_strstr_src2));
@@ -239,10 +239,30 @@ printf("\n\n=====Testing 17 - ft_strstr=====");
 	 printf("\n		LIBC: %s", ft_strstr_dst1);
 	 printf("\n		MINE: %s", ft_strstr_dst3);	
 
+printf("\n\n=====Testing 18 - ft_strnstr=====");	 
+	 //CURRENTLY WORKING ON
 
-// 18 ft_strnstr
+
+
+
 // 19 ft_strcmp
-// 20 ft_strncmp
+
+printf("\n\n=====Testing 20 - ft_strncmp=====");
+   	 char ft_strncmp_dst1[] = "Hello person I know!";
+   	 char ft_strncmp_src2[] = "Hello";
+	 printf("\n		LIBC: %d", strncmp(ft_strncmp_dst1, ft_strncmp_src2, 5));
+	 char ft_strncmp_dst3[] = "Hello person I know!";
+   	 char ft_strncmp_src4[] = "Hello";
+	 printf("\n		MINE: %d", ft_strncmp(ft_strncmp_dst3, ft_strncmp_src4, 5));
+
+   	 char ft_strncmp_dst5[] = "Hello person I know!";
+   	 char ft_strncmp_src6[] = "Dog";
+	 printf("\n		LIBC: %d", strncmp(ft_strncmp_dst5, ft_strncmp_src6, 5));
+	 char ft_strncmp_dst7[] = "Hello person I know!";
+   	 char ft_strncmp_src8[] = "Dog";
+	 printf("\n		MINE: %d", ft_strncmp(ft_strncmp_dst7, ft_strncmp_src8, 5));
+
+
 
 printf("\n\n=====Testing 21 - ft_atoi=====");
 	printf("\n		LIBC: %d", atoi("HelloWorld"));
