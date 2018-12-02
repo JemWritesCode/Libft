@@ -240,12 +240,24 @@ printf("\n\n=====Testing 17 - ft_strstr=====");
 	 printf("\n		MINE: %s", ft_strstr_dst3);	
 
 printf("\n\n=====Testing 18 - ft_strnstr=====");	 
-	 //CURRENTLY WORKING ON
 
+   	 char ft_strnstr_dst1[] = "Hello person I know!";
+   	 char ft_strnstr_src2[] = "person";
+	 printf("\n		LIBC: %s", strnstr(ft_strnstr_dst1, ft_strnstr_src2, 6));
+	 char ft_strnstr_dst3[] = "Hello person I know!";
+   	 char ft_strnstr_src4[] = "person";
+	 printf("\n		MINE: %s", ft_strnstr(ft_strnstr_dst3, ft_strnstr_src4, 6));
+
+	 printf("\n\n		LIBC: %s", strnstr(ft_strnstr_dst1, ft_strnstr_src2, 10));
+	 printf("\n		MINE: %s", ft_strnstr(ft_strnstr_dst3, ft_strnstr_src4, 10));
+
+	 printf("\n\n		LIBC: %s", strnstr(ft_strnstr_dst1, ft_strnstr_src2, 15));
+	 printf("\n		MINE: %s", ft_strnstr(ft_strnstr_dst3, ft_strnstr_src4, 15));
 
 
 
 // 19 ft_strcmp
+	 	 //CURRENTLY WORKING ON
 
 printf("\n\n=====Testing 20 - ft_strncmp=====");
    	 char ft_strncmp_dst1[] = "Hello person I know!";
