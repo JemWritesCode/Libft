@@ -2,6 +2,7 @@
 ### Recreating Libft at 42 Silicon Valley
 Currently a Work in Progress
 
+
 **Project Specs:** 
 `LibftWorkFiles/libft.en copy.pdf` 
 Project must also follow the standards of the Norm pdf.
