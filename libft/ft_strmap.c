@@ -11,3 +11,21 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+
+char			*ft_strmap(char const *s, char (*f)(char))
+{
+	char	*new;
+	int		i;
+
+	if (!s || !f)
+		return (NULL);
+	if (!(new = ft_strnew(ft_strlen(s))))
+		return (NULL);
+	i = 0;
+	while(s[i])
+	{
+		new[i] = f(s[i]);
+		i++;
+	}
+	return(new);
+}
