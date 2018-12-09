@@ -19,15 +19,15 @@ char				*ft_strnstr(const char *hay, const char *needle, size_t len)
 	i = 0;
 	if (!*needle)
 		return ((char*)hay);
-	while(hay[i] && i < len)
+	while (hay[i] && i < len)
 	{
 		if (ft_strncmp((char *)&hay[i], needle, ft_strlen(needle)) == 0)
 		{
 			if (i + ft_strlen(needle) > len)
 				return (NULL);
-			return((char*)&hay[i]);
+			return ((char*)&hay[i]);
 		}
 		i++;
 	}
-		return(NULL);
+	return (NULL);
 }
