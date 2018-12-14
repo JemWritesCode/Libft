@@ -11,3 +11,13 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// char	**ft_strsplit(char const *s, char c)
+// {
+// 	if (!s || !c)
+// 		return (NULL);
+// 
+// 	// count the length of the word
+// 	// malloc the space that first word
+// 	// do this again for each one
+// }

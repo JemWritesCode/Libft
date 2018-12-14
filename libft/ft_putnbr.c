@@ -12,6 +12,8 @@
 
 #include "libft.h"
 
+// TODO: need to fix the issue with the minimum 2147483648. hard coding this is bad practice
+
 void	ft_putnbr(int n)
 {
 	if (n == -2147483648)
