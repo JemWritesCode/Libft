@@ -12,22 +12,21 @@
 
 #include "libft.h"
 
-// TODO: need to fix the issue with the minimum 2147483648. hard coding this is bad practice
-
 void	ft_putnbr(int n)
 {
-	if (n == -2147483648)
-		ft_putstr("-2147483648");
-	if (n < 0)
+	long nl;
+
+	nl = n;
+	if (nl < 0)
 	{
 		ft_putchar('-');
-		n = -n;
+		nl = -nl;
 	}
-	if (n >= 10)
+	if (nl >= 10)
 	{
-		ft_putnbr(n / 10);
-		ft_putnbr(n % 10);
+		ft_putnbr(nl / 10);
+		ft_putnbr(nl % 10);
 	}
 	else
-		ft_putchar(n + '0');
+		ft_putchar(nl + '0');
 }

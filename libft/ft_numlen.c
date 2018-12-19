@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_numlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jcope <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,27 +12,17 @@
 
 #include "libft.h"
 
-
-
-char			*ft_itoa(int n)
+int		ft_numlen(int n)
 {
-	long	num;
-	char	*new;
-	int		len;
+	int len;
 
-	num = (long)n;
-	len = ft_numlen(num);
-	if (!(new = ft_strnew(len)))
-		return (NULL);
-	if (num < 0){
-		new[0] = '-';
-		num = -num;
-	}
-	while (len >= 0)
+	len = 0;
+	if (n < 0)
+		len++;
+	while(n != 0)
 	{
-		new[len] = num % 10 + '0';
-		num /= 10;
-		len--;
+		len++;
+		n /= 10;
 	}
-	return (new);
+	return(len);
 }

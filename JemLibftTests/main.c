@@ -425,5 +425,34 @@ printf("\n%s ======================Part 3 Function TESTS====================== %
 // 57 ft_lstiter
 // 58 ft_lstmap
 
+printf("\n%s ======================Part 4 Useful Extra Functions ====================== %s \n", KCYN, KGRN);
+	printf("\n\n=====Useful Extra Functions  1 - ft_numlen=====");
+	printf("\nft_numlen 12345:  \n\tEXPECT: 5 \n\tRESULT: %d\n", ft_numlen(12345));
+	printf("\nft_numlen 12345:  \n\tEXPECT: 6 \n\tRESULT: %d\n", ft_numlen(-12345));
+	printf("ft_numlen 42:  \n\tEXPECT: 2 \n\tRESULT: %d\n", ft_numlen(42));
+	printf("ft_numlen 12345:  \n\tEXPECT: 5 \n\tRESULT: %d\n", ft_numlen(12345));
+
+	printf("\n\n=====Useful Extra Functions  2 - ft_isspace=====");
+	printf("\n ft_isspace \n\tEXPECT:1 \n\tRESULT:%d\n", ft_isspace(' '));
+	printf("\n ft_isspace \n\tEXPECT:1 \n\tRESULT:%d\n", ft_isspace('\n'));
+	printf("\n ft_isspace \n\tEXPECT:0 \n\tRESULT:%d\n", ft_isspace('A'));
+
 	return (0);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
