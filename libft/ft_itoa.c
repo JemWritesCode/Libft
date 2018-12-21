@@ -12,27 +12,26 @@
 
 #include "libft.h"
 
-
-
 char			*ft_itoa(int n)
 {
-	long	num;
 	char	*new;
+	long	num;
 	int		len;
 
 	num = (long)n;
 	len = ft_numlen(num);
-	if (!(new = ft_strnew(len)))
+	if (!(new = ft_strnew(len--)))
 		return (NULL);
-	if (num < 0){
+	if (num < 0)
+	{
 		new[0] = '-';
 		num = -num;
 	}
-	while (len >= 0)
+	new[len--] = (num % 10) + '0';
+	while (num >= 10)
 	{
-		new[len] = num % 10 + '0';
 		num /= 10;
-		len--;
+		new[len--] = (num % 10) + '0';
 	}
 	return (new);
 }
