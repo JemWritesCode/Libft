@@ -14,19 +14,5 @@
 
 void	ft_putnbr(int n)
 {
-	long nl;
-
-	nl = n;
-	if (nl < 0)
-	{
-		ft_putchar('-');
-		nl = -nl;
-	}
-	if (nl >= 10)
-	{
-		ft_putnbr(nl / 10);
-		ft_putnbr(nl % 10);
-	}
-	else
-		ft_putchar(nl + '0');
+	ft_putnbr_fd(n, 1);
 }
