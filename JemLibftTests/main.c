@@ -438,12 +438,14 @@ printf("\n%s ======================Part 4 Useful Extra Functions ===============
 	printf("\n ft_isspace \n\tEXPECT:0 \n\tRESULT:%d\n", ft_isspace('A'));
 
 	printf("\n\n=====Useful Extra Functions  3 - ft_count_non_spaces=====");
-	printf("\n ft_isspace \n\tEXPECT:13 \n\tRESULT:%d\n", ft_count_non_spaces("This is a string"));
-	printf("\n ft_isspace \n\tEXPECT:14 \n\tRESULT:%d\n", ft_count_non_spaces("\nTesting\nNew\nLine"));
-	printf("\n ft_isspace \n\tEXPECT:1 \n\tRESULT:%d\n", ft_count_non_spaces("A"));
+	printf("\n ft_count_non_spaces \n\tEXPECT:13 \n\tRESULT:%d\n", ft_count_non_spaces("This is a string"));
+	printf("\n ft_count_non_spaces \n\tEXPECT:14 \n\tRESULT:%d\n", ft_count_non_spaces("\nTesting\nNew\nLine"));
+	printf("\n ft_count_non_spaces \n\tEXPECT:1 \n\tRESULT:%d\n", ft_count_non_spaces("A"));
 
-
-
+	printf("\n\n=====Useful Extra Functions  4 - ft_wordcount=====");
+	printf("\n ft_wordcount \n\tEXPECT:4 \n\tRESULT:%d\n",ft_wordcount("This is a string", ' '));
+	printf("\n ft_wordcount \n\tEXPECT:3 \n\tRESULT:%d\n",ft_wordcount("\nTesting\nNew\nLine", '\n'));
+	printf("\n ft_wordcount \n\tEXPECT:3 \n\tRESULT:%d\n", ft_wordcount("*hello*fellow***students*", '*'));
 
 	return (0);
 }

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsplit.c                                      :+:      :+:    :+:   */
+/*   ft_wordcount.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jcope <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,19 +12,18 @@
 
 #include "libft.h"
 
-//char	**ft_strsplit(char const *s, char c)
-//{
-//	char	*new;
-//	if (!s || !c)
-//		return (NULL);
-//	if(!(new = ft_strnew(ft_count_non_spaces(s))))
-//		return (NULL);
-//	while(*s)
-//		
-//
-//
-//
-//	//count the whole string when it's not a space and malloc that amount
-//	//create an array that is all the letters, and the second array tells you where the begining of each letter is?
-//	// not super sure how that comes together
-//}
+int		ft_wordcount(char *str, char c)
+{
+	int		count;
+
+	count = 0;
+	while(*str)
+	{
+		if (*str != c)
+			count++;
+		while(*str != c && *(str+1))
+				str++;
+		str++;
+	}
+	return (count);
+}
