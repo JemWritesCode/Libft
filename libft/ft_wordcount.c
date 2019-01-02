@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_wordcount.c                                      :+:      :+:    :+:   */
+/*   ft_wc.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jcope <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,17 +12,17 @@
 
 #include "libft.h"
 
-size_t		ft_wordcount(char *str, char c)
+size_t		ft_wc(char *str, char c)
 {
 	size_t		count;
 
 	count = 0;
-	while(*str)
+	while (*str)
 	{
 		if (*str != c)
 			count++;
-		while(*str != c && *(str+1))
-				str++;
+		while (*str != c && *(str + 1))
+			str++;
 		str++;
 	}
 	return (count);

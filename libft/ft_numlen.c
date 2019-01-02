@@ -19,10 +19,10 @@ int		ft_numlen(int n)
 	len = 0;
 	if (n <= 0)
 		len++;
-	while(n != 0)
+	while (n != 0)
 	{
 		len++;
 		n /= 10;
 	}
-	return(len);
+	return (len);
 }

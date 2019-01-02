@@ -17,24 +17,24 @@ char	**ft_strsplit(char const *s, char c)
 	size_t	i;
 	size_t	x;
 	size_t	k;
-	char	**new;
+	char	**n;
 
 	i = 0;
 	k = 0;
-	if (!s || !(new = (char **)malloc(sizeof(char *) * (ft_wordcount((char*)s, c) + 1))))
+	if (!s || !(n = (char **)malloc(sizeof(char*) * (ft_wc((char*)s, c) + 1))))
 		return (NULL);
-	while (i < ft_wordcount((char*)s, c))
+	while (i < ft_wc((char*)s, c))
 	{
-		if (!(new[i] = (char *)malloc(sizeof(char) * (ft_wordlen(&s[k], c) + 1))))
+		if (!(n[i] = (char *)malloc(sizeof(char) * (ft_wlen(&s[k], c) + 1))))
 			return (NULL);
 		x = 0;
 		while (s[k] == c)
 			k++;
 		while (s[k] != c && s[k])
-			new[i][x++] = s[k++];
-		new[i][x] = '\0';
+			n[i][x++] = s[k++];
+		n[i][x] = '\0';
 		i++;
 	}
-	new[i] = NULL;
-	return (new);
+	n[i] = NULL;
+	return (n);
 }

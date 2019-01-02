@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_count_non_spaces.c                                      :+:      :+:    :+:   */
+/*   ft_count_non_spaces.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jcope <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,11 +12,13 @@
 
 #include "libft.h"
 
-int		ft_count_non_spaces(char *str){
+int		ft_count_non_spaces(char *str)
+{
 	int		count;
 
 	count = 0;
-	while(*str){
+	while (*str)
+	{
 		if (!ft_isspace(*str))
 			count++;
 		str++;
