@@ -23,7 +23,8 @@ typedef struct	s_list
 	struct s_list	*next;
 }				t_list;
 
-int				ft_wordcount(char *str, char c);
+size_t		ft_wordlen(const char *str, char c);
+size_t			ft_wordcount(char *str, char c);
 int				ft_count_non_spaces(char *str);
 int				ft_numlen(int n);
 int				ft_isspace(char c);
