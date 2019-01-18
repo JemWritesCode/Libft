@@ -103,9 +103,18 @@ printf("\n\n=====Testing 6 - ft_memchr=====");
 	printf("\n 		LIBC: %s", memchr(ft_memchr_str1,'l', 5));
 	printf("\n 		MINE: %s", ft_memchr(ft_memchr_str1,'l', 5));
 
+	printf("\n");
 	char ft_memchr_str2[] = "Snap Crackle Pop"; 
 	printf("\n 		LIBC: %s", memchr(ft_memchr_str2,'p', 2));
 	printf("\n 		MINE: %s", ft_memchr(ft_memchr_str2,'p', 2));
+
+	//Test 3
+	printf("\n");
+	if(ft_memchr("abcdef", 999, 6) != memchr("abcdef", 999, 6))
+		printf("\n%s Testing 6 - ft_memchr FAILURE TEST 3 %s", KRED, KGRN);
+	printf("\n 		LIBC: %s", memchr("abcdef", 999, 6));
+	printf("\n 		MINE: %s", ft_memchr("abcdef", 999, 6));
+
 
  printf("\n\n=====Testing 7 - ft_memcmp=====");
 	char ft_memcmp_str1[] = "Hello";
