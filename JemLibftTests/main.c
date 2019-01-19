@@ -132,6 +132,9 @@ printf("\n\n=====Testing 6 - ft_memchr=====");
 	printf("\n 		LIBC: %d", memcmp(ft_memcmp_str5, ft_memcmp_str6, 6));
 	printf("\n 		MINE: %d", ft_memcmp(ft_memcmp_str5, ft_memcmp_str6, 6));
 
+	printf("\n 		LIBC: %d", memcmp("aww", "bpp", 0));
+	printf("\n 		MINE: %d", ft_memcmp("aww", "bpp", 0));
+
 
 printf("\n\n=====Testing 8 - ft_strlen=====");
 	printf("\n		LIBC: %zu", strlen("HelloWorld"));
@@ -291,6 +294,13 @@ printf("\n\n=====Testing 20 - ft_strncmp=====");
 	 char ft_strncmp_dst7[] = "Hello person I know!";
    	 char ft_strncmp_src8[] = "Dog";
 	 printf("\n		MINE: %d", ft_strncmp(ft_strncmp_dst7, ft_strncmp_src8, 5));
+
+	 printf("\n		LIBC: %d", strncmp("q", "a", 0));
+	 printf("\n		MINE: %d", ft_strncmp("q", "a", 0));
+
+	 printf("\n		LIBC: %d", strncmp("\200", "\0", 1)); //128
+	 printf("\n		MINE: %d", ft_strncmp("\200", "\0", 1));
+	 
 
 printf("\n\n=====Testing 21 - ft_atoi=====");
 	printf("\n		LIBC: %d", atoi("HelloWorld"));
