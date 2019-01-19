@@ -11,8 +11,8 @@
 # **************************************************************************** #
 
 NAME = libft.a
-SRCS = ../libft/*.c
-OBJS = ../libft/*.o
+SRCS = ./*.c
+OBJS = ./*.o
 HDR = ./libft.h
 FLAGS = -Wall -Wextra -Werror
 
