@@ -1,5 +1,7 @@
 # Libft
 ### Recreating Libft at 42 Silicon Valley
+The purpose of this project is to recreate some basic functionality of LibC for use in future projects at 42. This ensures understanding of each of these functions.
+
 `Score 125% (Max) (Outstanding Project x 3)`
 
 `libft_basics_1: 28/28 correct functions | libft_basics_2: 24/24 correct functions | libft_bonus: 6/6 correct functions`
