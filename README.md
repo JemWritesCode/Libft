@@ -1,8 +1,8 @@
 # Libft
 ### Recreating Libft at 42 Silicon Valley
-Score 125% (Max) (Outstanding Project x 3)
+`Score 125% (Max) (Outstanding Project x 3)`
 
-libft_basics_1: 28/28 correct functions | libft_basics_2: 24/24 correct functions | libft_bonus: 6/6 correct functions
+`libft_basics_1: 28/28 correct functions | libft_basics_2: 24/24 correct functions | libft_bonus: 6/6 correct functions`
 
 I spent extra time doing some code golf-- I'm sure some things can be improved but I learned a lot about writing cleaner code and using less memory. I didn't focus on speed this time.
 
